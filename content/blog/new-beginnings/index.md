@@ -9,6 +9,46 @@ Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
 
+## Code test 
+
+```
+
+#include <stdio.h>
+int main()
+{
+    int n, i, flag = 0;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+    for(i = 2; i <= n/2; ++i)
+    {
+        // condition for nonprime number
+        if(n%i == 0)
+        {
+            flag = 1;
+            break;
+        }
+    }
+    if (n == 1) 
+    {
+      printf("1 is neither a prime nor a composite number.");
+    }
+    else 
+    {
+        if (flag == 0)
+          printf("%d is a prime number.", n);
+        else
+          printf("%d is not a prime number.", n);
+    }
+    
+    return 0;
+}
+
+
+
+```
+
+Inline `code` has `back-ticks around` it.
+
 ## On deer horse aboard tritely yikes and much
 
 The Big Oxmox advised her not to do so, because there were thousands of bad
